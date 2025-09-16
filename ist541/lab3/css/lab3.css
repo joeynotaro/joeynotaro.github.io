@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	text-align: center;
+	background-color: #E7A1FF;
+}
+
+a {
+	padding: 15px;
+	margin: 3px;
+	font-size: 125%;
+	background-color: #FFFAA4;
+	color: black;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+}
+
+a:hover {
+	font-size: 200%;
+	background-color: #FFF437;
+	color: blue;
+}
+
