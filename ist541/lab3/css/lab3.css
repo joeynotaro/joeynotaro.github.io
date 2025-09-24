@@ -1,23 +1,56 @@
 @charset "UTF-8";
 /* CSS Document */
+
 body {
 	text-align: center;
-	background-color: #E7A1FF;
+	background-color: #187A3D;
+	width: 85%;
+	margin: 0 auto;
+}
+
+h1 {
+	padding-top: 20px;
+	font-size: 400%;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+h1, h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  color: white;
+}
+
+h2 {
+	font-weight: 200;
+	margin-top: 0px;
+}
+
+#menu {
+	display: flex;
+	width: 85%;
+	margin: 0 auto;
+	justify-content: space-evenly;
 }
 
 a {
 	padding: 15px;
 	margin: 3px;
 	font-size: 125%;
-	background-color: #FFFAA4;
-	color: black;
+	background-color: #2d70b3;
+	color: white;
 	border-radius: 20px;
-	box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+	box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+	text-decoration: none;
 }
 
 a:hover {
-	font-size: 200%;
-	background-color: #FFF437;
-	color: blue;
+	font-size: 150%;
+	background-color: #ffffff;
+	color: #187A3D;
 }
 
