@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CS Fundamentals</title>
+<link href="css/computers.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="menu">
+		<a href="index.html">Home</a>
+		<a href="parts.html">Components</a>
+		<a href="functions.html">Functions</a>
+		<a href="quiz.html" id="current">Quiz</a>
+	</div>
+	
+	<div id="wrapper">
+		<h1>Computer Quiz</h1>
+		<h2>For each of the questions below, click on the correct choice.
+		</h2>
+		
+		<br>
+		
+		<h2 align="left">1) Which of the following is an example of an input device?</h2>
+		
+		<ul>
+			<li>
+				<h3 onclick="wrongAnswer1()" class="choices">CPU</h3>
+			</li>
+			<li>
+				<h3 onclick="wrongAnswer2()" class="choices">Monitor</h3>
+			</li>
+			<li>
+				<h3 onclick="rightAnswer()" class="choices">Keyboard</h3>
+			</li>
+			<li>
+				<h3 onclick="wrongAnswer2()" class="choices">Printer</h3>
+			</li>
+		</ul>
+		
+		<div id="feedback"></div>
+		<img id="keyboard" src="img/keyboard.jpeg" alt="Computer keyboard.">
+		
+		<br>
+		
+		<h2 align="left">2) What is the primary function of memory components like RAM?</h2>
+		
+		<ul>
+			<li>
+				<h3 onclick="wrongAnswer3()" class="choices">Input information</h3>
+			</li>
+			<li>
+				<h3 onclick="rightAnswer2()" class="choices">Store information</h3>
+			</li>
+			<li>
+				<h3 onclick="wrongAnswer3()" class="choices">Process information</h3>
+			</li>
+			<li>
+				<h3 onclick="wrongAnswer3()" class="choices">Output information</h3>
+			</li>
+		</ul>
+		
+		<div id="feedback2"></div>
+		<img id="ram" src="img/ram.jpeg" alt="Computer random access memory (RAM).">
+		
+		<br>
+		
+		<h2 align="left">3) Which part of the computer processes and calculates all the information it receives?</h2>
+		
+		<ul>
+			<li>
+				<h3 onclick="rightAnswer3()" class="choices">CPU</h3>
+			</li>
+			<li>
+				<h3 onclick="wrongAnswer4()" class="choices">RAM</h3>
+			</li>
+			<li>
+				<h3 onclick="wrongAnswer4()" class="choices">Monitor</h3>
+			</li>
+			<li>
+				<h3 onclick="wrongAnswer4()" class="choices">Microphone</h3>
+			</li>
+		</ul>
+		
+		<div id="feedback3"></div>
+		<img id="cpu" src="img/cpu.jpeg" alt="Central processing unit (CPU) microchip.">
+		
+		<br>
+		
+		<h2 align="left">4) Which of the following is NOT an output device?</h2>
+		
+		<ul>
+			<li>
+				<h3 onclick="wrongAnswer5()" class="choices">Speaker</h3>
+			</li>
+			<li>
+				<h3 onclick="wrongAnswer5()" class="choices">Printer</h3>
+			</li>
+			<li>
+				<h3 onclick="wrongAnswer5()" class="choices">Monitor</h3>
+			</li>
+			<li>
+				<h3 onclick="rightAnswer4()" class="choices">Microphone</h3>
+			</li>
+		</ul>
+		
+		<div id="feedback4"></div>
+		<img id="monitor" src="img/monitor.jpeg" alt="Computer monitor.">
+		
+		<br><br><br>
+	</div>
+	
+	<div>
+		<h4 align="center">By Joey Notaro, 2025</h4>
+	</div>
+	
+	<script>
+		function rightAnswer() {
+			$("#feedback").html("<h3 style='color:green'> Correct! A keyboard is an input device.</h2>");
+			$("#keyboard").show();
+		}
+		
+		function wrongAnswer1() {
+			$("#feedback").html("<h3 style='color:red'> The CPU does not input information; it processes information. </h2>");
+			$("#keyboard").hide();
+		}
+		
+		function wrongAnswer2() {
+			$("#feedback").html("<h3 style='color:red'> This is an example of an output device. </h3>");
+			$("#keyboard").hide();
+		}
+		
+		function rightAnswer2() {
+			$("#feedback2").html("<h3 style='color:green'> Correct! RAM and other memory components like hard disk drives and solid state drives store information.</h2>");
+			$("#ram").show();
+		}
+		
+		function wrongAnswer3() {
+			$("#feedback2").html("<h3 style='color:red'> Sorry, RAM has a different function. </h3>");
+			$("#ram").hide();
+		}
+		
+		function rightAnswer3() {
+			$("#feedback3").html("<h3 style='color:green'> Exactly! The CPU process all information received from input devices and retrieved from storage devices.</h2>");
+			$("#cpu").show();
+		}
+		
+		function wrongAnswer4() {
+			$("#feedback3").html("<h3 style='color:red'> Not quite. A different component is responsible for processing information.</h3>");
+			$("#cpu").hide();
+		}
+		
+		function rightAnswer4() {
+			$("#feedback4").html("<h3 style='color:green'> Great work! An output device like a monitor returns information from the computer back to the physical world. Microphones receive information from the physical world, so they are input devices.</h2>");
+			$("#monitor").show();
+		}
+		
+		function wrongAnswer5() {
+			$("#feedback4").html("<h3 style='color:red'> Nope, this is an output device. Try again!</h3>");
+			$("#monitor").hide();
+		}
+	</script>
+	
+</body>
+</html>

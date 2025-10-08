@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #BBBBBB;
+}
+
+#menu {
+	background-color: #280050;
+	text-align: center;
+	padding: 20px 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#menu a {
+	background-color: #280050;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 20px 20px;
+}
+
+#menu a:hover {
+	background-color: white;
+	color: #280050;
+}
+
+#current {
+	background-color: #502800;
+}
+
+#wrapper {
+	width: 85%;
+	background-color: white;
+	color: black;
+	align-content: center;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 20px;
+}
+
+h1 {
+	background-color: #502800;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+ul {
+	text-align: left;
+}
+
+#input {
+	margin: 0 auto;
+	width: 50%;
+	border: black 3px solid;
+}
+
+#keyboard {
+	display: none; /* hides content*/
+	width: 250px;
+	border: black 3px solid;
+}
+
+#store {
+	margin: 0 auto;
+	width: 50%;
+	border: black 3px solid;
+}
+
+#ram {
+	display: none; /* hides content*/
+	width: 250px;
+	border: black 3px solid;
+}
+
+#process {
+	margin: 0 auto;
+	width: 50%;
+	border: black 3px solid;
+}
+
+#cpu {
+	display: none; /* hides content*/
+	width: 250px;
+	border: black 3px solid;
+}
+
+#output {
+	margin: 0 auto;
+	width: 50%;
+	border: black 3px solid;
+}
+
+#monitor {
+	display: none; /* hides content*/
+	width: 250px;
+	border: black 3px solid;
+}
+
+.choices {
+	cursor: pointer;
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CS Fundamentals</title>
+<link href="css/computers.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="menu">
+		<a href="index.html">Home</a>
+		<a href="parts.html" id="current">Components</a>
+		<a href="functions.html">Functions</a>
+		<a href="quiz.html">Quiz</a>
+	</div>
+	
+	<div id="wrapper">
+		<h1>Computer Components</h1>
+		<h2>Scroll over each of the icons below to learn a little more about what each of the four major components are and see some examples.
+		</h2>
+		
+		<br><br>
+		
+	  <img onmouseenter="showInput()" id="input" src="img/input.png" alt="Input icon with arrows pointing inward.">
+		
+	  <img onmouseleave="hideInput()" id="keyboard" src="img/keyboard.jpeg" alt="Computer keyboard.">
+		
+	  <div id="inputAnswer"></div>
+	
+	  <br><br>
+		
+	  <img onmouseenter="showStore()" id="store" src="img/store.png" alt="Store icon with stacked cylinders on either side.">
+	    
+	  <img onmouseleave="hideStore()" id="ram" src="img/ram.jpeg" alt="Computer random access memory (RAM).">
+	    
+	  <div id="storeAnswer"></div>   <!-- This is a placeholder to display the answer -->
+		
+	  <br><br>
+		
+	  <img onmouseenter="showProcess()" id="process" src="img/process.png" alt="Process icon with gears.">
+		
+	  <img onmouseleave="hideProcess()" id="cpu" src="img/cpu.jpeg" alt="Central processing unit (CPU) microchip.">
+		
+	  <div id="processAnswer"></div>   <!-- This is a placeholder to display the answer -->
+		
+	  <br><br>
+		
+	  <img onmouseenter="showOutput()" id="output" src="img/output.png" alt="Output icon with arrows facing outward.">
+	
+	  <img onmouseleave="hideOutput()" id="monitor" src="img/monitor.jpeg" alt="Computer monitor screen.">
+	  
+	  <div id="outputAnswer"></div>   <!-- This is a placeholder to display the answer -->
+		
+	  <br><br>
+		
+	</div> <!-- closing "wrapper" -->
+	
+	<div>
+		<h4 align="center">By Joey Notaro, 2025</h4>
+	</div>
+
+<script>
+		function showInput() {
+			$("#input").hide();
+			$("#keyboard").show();
+			$("#inputAnswer").html("<h3>Keyboards are an example of an input device which converts physical input into binary information. Webcams, microphones, and the computer mouse are other examples of input devices.</h3>");
+		}
+		
+		function hideInput() {
+			$("#input").show();
+			$("#keyboard").hide();
+			$("#inputAnswer").html("");
+		}
+		
+		function showStore() {
+			$("#store").hide();
+			$("#ram").show();
+			$("#storeAnswer").html("<h3>Random access memory, or RAM for short, is the primary storage device for information coming from input devices.</h3>");
+		}
+		
+		function hideStore() {
+			$("#store").show();
+			$("#ram").hide();
+			$("#storeAnswer").html("");
+		}
+		
+		function showProcess() {
+			$("#process").hide();
+			$("#cpu").show();
+			$("#processAnswer").html("<h3>The central processing unit, or CPU for short, processes and calculates information from input and storage devices.</h3>");
+		}
+		
+		function hideProcess() {
+			$("#process").show();
+			$("#cpu").hide();
+			$("#processAnswer").html("");
+		}
+		
+		function showOutput() {
+			$("#output").hide();
+			$("#monitor").show();
+			$("#outputAnswer").html("<h3>Monitors are an example of an output device which converts the binary information in the computer back into physical output. Speakers, printers, and even 3D printers are other examples of output devices.</h3>");
+		}
+		
+		function hideOutput() {
+			$("#output").show();
+			$("#monitor").hide();
+			$("#outputAnswer").html("");
+		}
+		
+	</script>
+	
+</body>
+</html>
