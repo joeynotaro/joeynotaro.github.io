@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Rooming</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href= "https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+ 
+<body>
+	<div id="title">
+		<h1>Medical Assistants' Compliance Training</h1>	
+	</div>
+	<div id="menu">
+		<a href="index.html">Home</a>
+		<a href="checkin.html">Check-In</a>
+		<a href="handwashing.html">Handwashing</a>
+		<a href="rooming.html" id="current">Rooming</a>
+		<a href="disinfection.html">Disinfection</a>
+		<a href="certification.html">Certification</a>
+	</div>
+	
+    <div id="wrapper">
+		
+		<h2>Certification Quiz</h2>
+		
+		<br>
+		
+		<h3>Congratulations! You have completed the medical assistants' compliance training. As a final step, please answer each of the questions below to prove your knowledge. If you get a question wrong, you will receive feedback and will be prompted to try again.</h3>
+		
+		<br><br>
+		
+		<h4 align="left">1) Which of the following VIOLATES a privacy practice required under HIPAA?</h4>
+		
+		<ul>
+			<li>
+				<h4 onclick="wrongAnswer1()" class="choices">Asking the patient to show ID.</h4>
+			</li>
+			<li>
+				<h4 onclick="wrongAnswer2()" class="choices">Shredding the Notice of Privacy Practices form after it has been scanned into the EHR system.</h4>
+			</li>
+			<li>
+				<h4 onclick="rightAnswer()" class="choices">Staying logged into the EHR system while you room a patient.</h4>
+			</li>
+			<li>
+				<h4 onclick="wrongAnswer2()" class="choices">Speaking quietly with a patient about their protected health information at the front desk.</h4>
+			</li>
+		</ul>
+		
+		<div id="feedback"></div>
+		<img id="securityQuiz" src="img/security.png" alt="Shield icon with lock inside, representation security.">
+		
+		<br>
+		
+		<h4 align="left">2) Which of the following explains why asking a patient about their medical history is a safety concern?</h4>
+		
+		<ul>
+			<li>
+				<h4 onclick="wrongAnswer3()" class="choices">The patient is almost always calmer after talking about their medical history.</h4>
+			</li>
+			<li>
+				<h4 onclick="rightAnswer2()" class="choices">The information in their medical charts on the EHR systems needs to be accurate, including medications and allergies, to receive appropriate care.</h4>
+			</li>
+			<li>
+				<h4 onclick="wrongAnswer3()" class="choices">Patients are often reluctant to tell the truth to doctors, so MAs must ask them directly.</h4>
+			</li>
+			<li>
+				<h4 onclick="wrongAnswer3()" class="choices">The medical history may not match the vitals, indicating a serious health concern.</h4>
+			</li>
+		</ul>
+		
+		<div id="feedback2"></div>
+		<img id="recordsQuiz" src="img/records.jpeg" alt="Two medical assistants looking at a computer screen together.">
+		
+		<br>
+		
+		<h4 align="left">3) Which of the following is the correct sequence of the proper disposal and disinfection procedures for examination room tables?</h4>
+		
+		<ul>
+			<li>
+				<h4 onclick="rightAnswer3()" class="choices">Put on gloves, place any sharps in the sharps container, roll up paper and place in trash, use bleach solution on table, and wipe down table and dry.</h4>
+			</li>
+			<li>
+				<h4 onclick="wrongAnswer4()" class="choices">Put on gloves, roll up paper and place in trash, use bleach solution on table, wipe down table and dry, and place any sharps in the sharps container.</h4>
+			</li>
+			<li>
+				<h4 onclick="wrongAnswer4()" class="choices">Place any sharps in the sharps container, roll up paper and place in trash, use bleach solution on table, wipe down table and dry, and put on gloves.</h4>
+			</li>
+			<li>
+				<h4 onclick="wrongAnswer4()" class="choices">Put on gloves, place any sharps in the sharps container, use bleach solution on table, wipe down table and dry, and roll up paper and place in trash.</h4>
+			</li>
+		</ul>
+		
+		<div id="feedback3"></div>
+		<img id="examRoom" src="img/examRoom.png" alt="Exam room with medical assistant showing fresh paper pulled over the now clean exam table.">
+		
+		<br><br><br>
+	</div>
+	
+	<div>
+		<h4 id="byline" align="center">By Joey Notaro, 2025</h4>
+	</div>
+	
+	<script>
+		function rightAnswer() {
+			$("#feedback").html("<h4 style='color:green'> Correct! You should always log out of the EHR system any time you leave your work station.</h4>");
+			$("#securityQuiz").show();
+		}
+		
+		function wrongAnswer1() {
+			$("#feedback").html("<h4 style='color:red'> Although you can verify identify with full name and date of birth, asking for ID is not a HIPAA violation. Please try again.</h4>");
+			$("#securityQuiz").hide();
+		}
+		
+		function wrongAnswer2() {
+			$("#feedback").html("<h4 style='color:red'> This is actually a required HIPAA practice. Please try again. </h4>");
+			$("#securityQuiz").hide();
+		}
+		
+		function rightAnswer2() {
+			$("#feedback2").html("<h4 style='color:green'> Correct! Accurate documentation ensure appropriate care.</h4>");
+			$("#recordsQuiz").show();
+		}
+		
+		function wrongAnswer3() {
+			$("#feedback2").html("<h4 style='color:red'> This is not really a safety concern. Please try again</h4>");
+			$("#recordsQuiz").hide();
+		}
+		
+		function rightAnswer3() {
+			$("#feedback3").html("<h4 style='color:green'> Exactly! This is the correct sequence for proper disposal and disinfection. The examination table is ready for the next patient, and you are ready to disinfect the counters.</h4>");
+			$("#examRoom").show();
+		}
+		
+		function wrongAnswer4() {
+			$("#feedback3").html("<h4 style='color:red'> Not quite. At least one of the procedures is out of order and could lead to cross-contamination and risk of infection for the next patient.</h4>");
+			$("#examRoom").hide();
+		}
+		
+	</script>
+		
+</body>
+</html>

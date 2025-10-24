@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #183453;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+}
+
+#title {
+	font-size: 150%;
+	margin: 30px;
+	color: white;
+	font-family: "Rosarivo", cursive;
+}
+
+#menu {
+	background-color: #5594b9;
+	text-align: center;
+	padding: 20px 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#menu a {
+	background-color: #5594b9;
+	color: white;
+	text-decoration: none;
+	font-size: 200%;
+	padding: 20px 20px;
+}
+
+#menu a#current {
+	background-color: #ffffff;
+	color: #5594b9;
+}
+
+#menu a:hover {
+	background-color: white;
+	color: #5594b9;
+}
+
+#wrapper {
+	width: 85%;
+	background-color: white;
+	color: black;
+	align-content: center;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 20px;
+	justify-content: center;
+	box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+}
+
+h2 {
+	background-color: #ffffc5;
+	text-align: center;
+	padding: 10px;
+	border-radius: 20px;
+	width: 100%;
+	box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+}
+
+h3 {
+	text-align: left;
+}
+
+.material-icons {
+	color: #ffffff;
+	font-size: 3em;
+}
+
+.warning {
+	background-color: #183453;
+	padding: 10px;
+	border-radius: 20px;
+	color: white;
+}
+
+.stepTitle{
+	padding:10px;
+	padding-left: 2.5%;
+	text-align:left;
+	background-color:#ffffc5;
+	font-weight: bold;
+	font-size: 150%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+ }
+
+#intro{ 
+	background-color: white;
+	padding-top: 1.25%;
+	padding-bottom: 1.25%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.stepContent{ 
+	background-color: white;
+	padding-top: 1.25%;
+	padding-bottom: 1.25%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+}
+
+.stepDescription {
+	width:60%;
+	padding: 0%;
+	padding-right: 5%;
+	line-height:150%;
+}
+
+.stepImage {
+	width:25%;	
+	padding-top: 1.25%;
+	padding-bottom: 1.25%;
+	text-align: center;
+}
+
+.stepImage img {
+    width:100%;
+    height:auto;
+	border-radius: 20px;
+	box-shadow:0 4px 8px 0 gray, 0 6px 20px 0 gray;
+}
+
+
+ul {
+	text-align: left;
+}
+
+#bpcuff {
+	margin: 0 auto;
+	width: 25%;
+	border: black 3px solid;
+}
+
+#vitals {
+	display: none; /* hides content*/
+	width: 25%;
+	border: black 3px solid;
+}
+
+#ehr {
+	margin: 0 auto;
+	width: 25%;
+	border: black 3px solid;
+}
+
+#records {
+	display: none; /* hides content*/
+	width: 25%;
+	border: black 3px solid;
+}
+
+#gown {
+	margin: 0 auto;
+	width: 25%;
+	border: black 3px solid;
+}
+
+#patient {
+	display: none; /* hides content*/
+	width: 25%;
+	border: black 3px solid;
+}
+
+#securityQuiz {
+	display: none; /* hides content*/
+	width: 250px;
+	border: black 3px solid;
+}
+
+#recordsQuiz {
+	display: none; /* hides content*/
+	width: 250px;
+	border: black 3px solid;
+}
+
+#examRoom {
+	display: none; /* hides content*/
+	width: 250px;
+	border: black 3px solid;
+}
+
+.choices {
+	cursor: pointer;
+}
+
+#byline {
+	color: white;
+}
+
+

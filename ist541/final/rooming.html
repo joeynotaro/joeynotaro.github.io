@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Rooming</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href= "https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+ 
+<body>
+	<div id="title">
+		<h1>Medical Assistants' Compliance Training</h1>	
+	</div>
+	<div id="menu">
+		<a href="index.html">Home</a>
+		<a href="checkin.html">Check-In</a>
+		<a href="handwashing.html">Handwashing</a>
+		<a href="rooming.html" id="current">Rooming</a>
+		<a href="disinfection.html">Disinfection</a>
+		<a href="certification.html">Certification</a>
+	</div>
+	
+    <div id="wrapper">
+		
+		<h2>Rooming and Preparing a Patient</h2>
+		
+		<br>
+		
+		<h3>After check-in, you will bring your patient to the exam room and prepare them to meet with the doctor. Your role as a medical assistant includes some key tasks, which ensure patient safety during their visit. Hover over each of the images below to learn more about how you support patient safety.
+		</h3>
+		
+		<br><br>
+		
+	  	<img onmouseenter="showVital()" id="bpcuff" src="img/bpcuff.jpeg" alt="Blood pressure cuff.">
+		
+		<img onmouseleave="hideVital()" id="vitals" src="img/vitals.jpeg" alt="Computer keyboard.">
+		
+	 	<div id="vitalAnswer"></div>
+	
+	  	<br><br>
+		
+	 	<img onmouseenter="showRecords()" id="ehr" src="img/ehr.jpeg" alt="Computer screen with an Electronic Health Record open.">
+	    
+	  	<img onmouseleave="hideRecords()" id="records" src="img/records.jpeg" alt="Two medical assistants looking at a computer together.">
+	    
+	  	<div id="recordsAnswer"></div>   <!-- This is a placeholder to display the answer -->
+		
+	  	<br><br>
+		
+	  	<img onmouseenter="showPatient()" id="gown" src="img/gown.jpeg" alt="Hospital gown">
+		
+	  	<img onmouseleave="hidePatient()" id="patient" src="img/patient.jpeg" alt="Patient in a hospital gown sitting the exam table in an exam room.">
+		
+	  	<div id="patientAnswer"></div>   <!-- This is a placeholder to display the answer -->
+		
+	  	<br><br>
+		
+	</div> <!-- closing "wrapper" -->
+	
+	<div id="byline">
+		<h4 align="center">By Joey Notaro, 2025</h4>
+	</div>
+
+<script>
+		function showVital() {
+			$("#bpcuff").hide();
+			$("#vitals").show();
+			$("#vitalAnswer").html("<p>You must take the patient's vital signs, including temperature, pulse, blood pressure, oxygen saturation, height, and weight. The major safety concern here is <strong>recording all measurements accruately</strong> and establishing that the patient is at a stable baseline.</p>");
+		}
+		
+		function hideVital() {
+			$("#bpcuff").show();
+			$("#vitals").hide();
+			$("#vitalAnswer").html("");
+		}
+		
+		function showRecords() {
+			$("#ehr").hide();
+			$("#records").show();
+			$("#recordsAnswer").html("<p>After recording vitals, you must ask the patient the primary reason for their visit. You must also review current medications and allergies based on the patient's electronic health records. Lastly, you must ask if there are any medical history updates since their last visit. Just like taking vitals, the chief safety concern here is <strong>accurate documentation of the patient's medical history.</strong> Accurate medical histories ensure appropriate care.</p>");
+		}
+		
+		function hideRecords() {
+			$("#ehr").show();
+			$("#records").hide();
+			$("#recordsAnswer").html("");
+		}
+		
+		function showPatient() {
+			$("#gown").hide();
+			$("#patient").show();
+			$("#patientAnswer").html("<p>After reviewing medical history, it is time to give the patient their gown and instructions to undress. Privacy is most important here. <strong>You must leave the room while the patient gets into their gown and knock before re-entering</strong>. Your patient is now ready to see the doctor!</p>");
+		}
+		
+		function hidePatient() {
+			$("#gown").show();
+			$("#patient").hide();
+			$("#patientAnswer").html("");
+		}
+		
+	</script>
+		
+</body>
+</html>
