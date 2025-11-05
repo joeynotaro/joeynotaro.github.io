@@ -35,7 +35,7 @@
           </optionlist>
           <option name="time_enabled" value="false">
             <options>
-              <option name="time_format" value="" />
+              <option name="time_format" value="none" />
             </options>
           </option>
           <option name="video_enabled" value="false">
@@ -1558,7 +1558,7 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.62qBPzo2uCm" displaytext="Conflict Management" expand="true" type="slide">
+        <slidelink slideid="_player.62qBPzo2uCm" displaytext="Sim" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.62qBPzo2uCm.5fgVelxijUa" displaytext="Welcome" expand="false" type="slide" />
             <slidelink slideid="_player.62qBPzo2uCm.6E182ksBFzW" displaytext="Team Atlas" expand="false" type="slide" />
@@ -1584,6 +1584,27 @@
             <slidelink slideid="_player.62qBPzo2uCm.5hSMH3zov3O" displaytext="Conflict Strategies" expand="false" type="slide" />
             <slidelink slideid="_player.62qBPzo2uCm.5jhdvxfs8fg" displaytext="Conflict Strategies Example #1" expand="false" type="slide" />
             <slidelink slideid="_player.62qBPzo2uCm.6fjD5sB9h3I" displaytext="Conflict Styles Example #2" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6WomGbsxeiP" displaytext="Practice Question 7" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.66WCav4epfB" displaytext="Practice Question 8" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6p5w1tR2w1M" displaytext="Practice Question 9" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6kBox1XXClJ" displaytext="Conflict Strategies Summary" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.5cXygols9yh" displaytext="Simulation Goals" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6MbC2EMVhFr" displaytext="Coaching Raj" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.60o7OOz06Fd" displaytext="First Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6EZbhDWpvdI" displaytext="First Decision Correct" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6DVPlj7BK94" displaytext="First Decision Incorrect" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6eaGWD795RD" displaytext="Second Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.5qsbHBv2DxU" displaytext="Second Decision Correct" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6TtSPW22yNQ" displaytext="Second Decision Incorrect" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6N0WbfIebkL" displaytext="Third Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.5dyMJzIcznH" displaytext="Third Decision Correct" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6OoheWcwtfq" displaytext="Third Decision Incorrect" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6NYFZLvtLH4" displaytext="Fourth Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6i865cvtRJr" displaytext="Fourth Decision Incorrect" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6iG5L8rHMQS" displaytext="Simulation Key Takeaways" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6fM2wPyTkYe" displaytext="Next Steps" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6mJnZVooE7x" displaytext="Credits" expand="false" type="slide" />
+            <slidelink slideid="_player.62qBPzo2uCm.6mP6PJlUVzV" displaytext="Fourth Decision Correct" expand="false" type="slide" />
             <slidelink slideid="_player.62qBPzo2uCm.6R7DCbpFvyR" displaytext="Practice Question 1" expand="false" type="slide" />
           </links>
         </slidelink>
